@@ -8,7 +8,7 @@
 	--bg-primary: antiquewhite;
 	--bg-secondary: rgb(163, 112, 16);
 
-	--footerHeight: 1rem;
+	--footerHeight: 3rem;
 	--btnHorizontalPadding: 7em;
 	--btnVerticalPadding: 2em;
 	--descriptionVerticalPadding: 9vh;
@@ -154,19 +154,18 @@ button:active {
 	align-items: center;
 }
 
-.nav-link {
+a {
 	transition: text-decoration-color 200ms ease-in-out;
 	text-decoration: underline;
 	text-decoration-color: transparent;
 }
 
-.nav-link:hover {
+a:hover {
 	text-decoration-color: var(--text-primary);
 }
 
 .page-footer {
 	font-size: smaller;
-	padding: 1.25rem;
 	width: 100%;
 	height: var(--footerHeight);
 	background-color: var(--bg-secondary);
