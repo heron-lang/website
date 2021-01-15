@@ -8,7 +8,7 @@
 	--bg-primary: antiquewhite;
 	--bg-secondary: rgb(163, 112, 16);
 
-	--footerHeight: 3rem;
+	--footerHeight: 5rem;
 	--btnHorizontalPadding: 7em;
 	--btnVerticalPadding: 2em;
 	--descriptionVerticalPadding: 9vh;
@@ -46,14 +46,6 @@ body {
 #logo {
 	height: 13rem;
 	width: 13rem;
-}
-
-h1 {
-	font-size: 5vw;
-}
-
-p {
-	font-size: 1vw;
 }
 
 .typewriter h1 {
