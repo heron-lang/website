@@ -30,6 +30,10 @@
 	background: #555;
 }
 
+::selection {
+	background-color: #0858a870;
+}
+
 body {
 	background-color: antiquewhite;
 	text-align: center;
