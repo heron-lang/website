@@ -1,0 +1,142 @@
+body {
+	font-family: "Courier New", Courier, monospace;
+	background-color: antiquewhite;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 3%;
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+:root {
+	--footerHeight: 1rem;
+	--btnHorizontalPadding: 7em;
+	--btnVerticalPadding: 2em;
+	--descriptionVerticalPadding: 9vh;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+#logo {
+	height: 13rem;
+	width: 13rem;
+}
+
+h1 {
+	font-size: 5vw;
+}
+
+p {
+	font-size: 1vw;
+}
+
+.typewriter h1 {
+	display: inline-block;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	transition: border-color 1s;
+	border-right: 0.15em solid orange; /* the typwriter cursor */
+	white-space: nowrap; /* keeps the content on a single line */
+	margin: 0 auto; /* gives that scrolling effect as the typing happens */
+	letter-spacing: 0.35rem;
+	animation: typing 2.5s steps(26, end), blink-caret 0.7s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+/* the typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+
+	50% {
+		border-color: orange;
+	}
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-header,
+.page-footer {
+	flex-shrink: 0;
+}
+
+.page-body {
+	flex-grow: 1;
+}
+
+#description {
+	width: 100%;
+	padding-bottom: var(--descriptionVerticalPadding);
+	padding-top: var(--descriptionVerticalPadding);
+	background-color: #6f8cac;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#description div {
+	margin-right: 5vh;
+	width: 500px;
+	flex: 3;
+}
+
+button {
+	color: black;
+	text-decoration: none;
+	border: none;
+	background-color: rgb(163, 112, 16);
+	transition: background-color 0.5s;
+	border-radius: 10px;
+	cursor: pointer;
+	padding-left: var(--btnHorizontalPadding);
+	padding-right: var(--btnHorizontalPadding);
+	padding-top: var(--btnVerticalPadding);
+	padding-bottom: var(--btnVerticalPadding);
+	margin: 10px;
+	margin-top: 10px;
+	color: antiquewhite;
+}
+
+button:active {
+	background-color: rgb(219, 156, 39);
+}
+
+.page-footer {
+	font-size: smaller;
+	padding: 1.25rem;
+	width: 100%;
+	height: var(--footerHeight);
+	background-color: rgb(163, 112, 16);
+}
