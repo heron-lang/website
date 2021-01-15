@@ -1,18 +1,12 @@
-body {
-	font-family: "Courier New", Courier, monospace;
-	background-color: antiquewhite;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	margin-top: 3%;
-}
-
-* {
-	box-sizing: border-box;
-	outline: none;
-}
-
 :root {
+	font-size: 16px;
+
+	--text-primary: rgb(26, 26, 26);
+	--text-secondary: antiquewhite;
+
+	--bg-primary: antiquewhite;
+	--bg-secondary: rgb(163, 112, 16);
+
 	--footerHeight: 1rem;
 	--btnHorizontalPadding: 7em;
 	--btnVerticalPadding: 2em;
@@ -33,6 +27,21 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
+}
+
+body {
+	font-family: "Courier New", Courier, monospace;
+	background-color: antiquewhite;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 3%;
+}
+
+* {
+	color: var(--text-primary);
+	box-sizing: border-box;
+	outline: none;
 }
 
 #logo {
@@ -78,7 +87,7 @@ p {
 	}
 
 	50% {
-		border-color: orange;
+		border-color: var(--text-primary);
 	}
 }
 
@@ -113,10 +122,10 @@ p {
 }
 
 button {
-	color: black;
+	color: var(--text-secondary);
 	text-decoration: none;
 	border: none;
-	background-color: rgb(163, 112, 16);
+	background-color: var(--bg-secondary);
 	transition: background-color 0.5s;
 	border-radius: 10px;
 	cursor: pointer;
@@ -126,7 +135,6 @@ button {
 	padding-bottom: var(--btnVerticalPadding);
 	margin: 10px;
 	margin-top: 10px;
-	color: antiquewhite;
 }
 
 button:active {
@@ -138,5 +146,5 @@ button:active {
 	padding: 1.25rem;
 	width: 100%;
 	height: var(--footerHeight);
-	background-color: rgb(163, 112, 16);
+	background-color: var(--bg-secondary);
 }
